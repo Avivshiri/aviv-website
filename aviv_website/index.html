@@ -3,23 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <meta property="og:title" content="Aviv Shiri Portfolio">
-
+    <meta name="description" content="Aviv Shiri - Partner & Enterprise Sales Manager. Over a decade of experience in enterprise technology, cloud, and SaaS-based solutions with proven track record in B2B sales." />
+    <meta name="keywords" content="Aviv Shiri, Sales Manager, Enterprise Sales, Dell EMC, B2B Sales, Cloud Solutions, SaaS, Enterprise Technology, Sales Professional, Business Development" />
+    <meta name="author" content="Aviv Shiri" />
+    <meta property="og:title" content="Aviv Shiri - Partner & Enterprise Sales Manager" />
+    <meta property="og:description" content="Sales professional with over a decade of experience in enterprise technology, cloud, and SaaS-based solutions. Proven track record in B2B sales and channel partnerships." />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
+ <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Aviv Shiri</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    <title>Aviv Shiri - Partner & Enterprise Sales Manager</title>
   </head>
   <body class="light" id="top">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+      <div class="loader">
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+      </div>
+      <div class="loading-text">
+        <span>A</span><span>v</span><span>i</span><span>v</span>
+        <span>S</span><span>h</span><span>i</span><span>r</span><span>i</span>
+      </div>
+    </div>
+
+    <!-- Subtle Background -->
+    <div class="bg-pattern"></div>
+
     <header class="header center">
       <h3>
         <a href="" class="link"
@@ -30,10 +51,16 @@
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Experience</a>
+            <a class="link link--nav" href="#about">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
@@ -55,140 +82,553 @@
     </header>
 
     <main>
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Aviv</span></h1>
-        <h2 class="about__role">Business Development & Sales Specialist</h2>
-        <p class="about__desc">
-          Sales expert with over a decade of experience delivering advanced solutions across cloud computing, IT infrastructure, and software services. Proven ability to build long-term client relationships, lead high-impact sales strategies, and consistently exceed targets. Passionate about aligning technical innovation with real business needs and driving strategic growth.
-        </p>
-
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1tx-4jpjp8pGlpFx6hTkER3oongkeu53d/view?usp=sharing">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-
-          <a
-            href="https://github.com/Avivshiri"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/aviv-shiri/"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1 class="hero__greeting">Hi, I'm <span class="hero__name">Aviv Shiri</span></h1>
+            <div class="hero__typing-container">
+              <h2 class="hero__role">I'm a <span class="typing-text"></span><span class="cursor">|</span></h2>
+            </div>
+            <p class="hero__desc">
+              Sales professional with over a decade of experience in enterprise technology, cloud, and SaaS-based solutions. 
+              Proven track record in managing complex B2B sales cycles, driving revenue growth, and developing strong 
+              channel partnerships. Recognized for building trust with clients and delivering measurable results.
+            </p>
+            <div class="hero__cta">
+              <a href="https://drive.google.com/file/d/17pDoxhLDocV7vgua-AAJcEJFzHS7aRBn/view?usp=sharing" class="btn btn--primary">
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn--outline">
+                <i class="fas fa-envelope"></i> Get In Touch
+              </a>
+            </div>
+            <div class="hero__social">
+              <a href="https://www.linkedin.com/in/aviv-shiri/" aria-label="linkedin" class="social-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://avivshiri.com/" aria-label="website" class="social-link">
+                <i class="fas fa-globe"></i>
           </a>
         </div>
       </div>
+          <div class="hero__visual">
+            <div class="hero__avatar">
+              <img src="profile.jpg" alt="Aviv Shiri" class="profile-image">
+            </div>
+          </div>
+        </div>
+        <div class="hero__scroll-indicator">
+          <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <span>Scroll to explore</span>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <div class="about__grid">
+            <div class="about__text">
+              <h3>Professional Background</h3>
+              <p>
+                With over a decade of experience in enterprise technology sales, I've developed a strong foundation 
+                in B2B sales cycles, channel partnerships, and revenue growth. Currently serving as Partner & Enterprise Sales Manager 
+                at Dell EMC, driving enterprise sales of infrastructure, SaaS, and data protection solutions.
+              </p>
+              <h3>Sales Expertise</h3>
+              <p>
+                Specialized in enterprise technology, cloud, and SaaS-based solutions with a proven track record in managing 
+                complex B2B sales cycles. I excel at aligning infrastructure and cybersecurity solutions with customer business goals, 
+                consistently exceeding revenue targets through consultative, value-based selling.
+              </p>
+              <div class="about__highlights">
+                <div class="highlight">
+                  <i class="fas fa-chart-line"></i>
+                  <div>
+                    <h4>Revenue Growth</h4>
+                    <p>Consistently exceeding sales targets</p>
+                  </div>
+                </div>
+                <div class="highlight">
+                  <i class="fas fa-handshake"></i>
+                  <div>
+                    <h4>Client Relationships</h4>
+                    <p>Building trust and long-term partnerships</p>
+                  </div>
+                </div>
+                <div class="highlight">
+                  <i class="fas fa-users"></i>
+                  <div>
+                    <h4>Team Leadership</h4>
+                    <p>Leading and mentoring sales teams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__stats">
+              <div class="stat-card">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="500">0</div>
+                <div class="stat-label">Enterprise Clients</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number" data-target="150">0</div>
+                <div class="stat-label">% Revenue Growth</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Projects -->
       <section id="projects" class="section projects">
-        <h2 class="section__title">Experience Highlights</h2>
+        <div class="container">
+          <h2 class="section__title">Sales Achievements</h2>
+          <div class="projects__filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="enterprise">Enterprise Sales</button>
+            <button class="filter-btn" data-filter="partnerships">Partnerships</button>
+            <button class="filter-btn" data-filter="growth">Revenue Growth</button>
+          </div>
 
         <div class="projects__grid">
-          <div class="project">
-            <h3>Infrastructure Sales Specialist</h3>
-            <p class="project__description">
-              Specialized in Dell Technologies servers, storage, and client products. Delivered comprehensive technical consulting and customized APC UPS solutions to meet enterprise infrastructure needs.
-            </p>
+            <div class="project-card" data-category="enterprise">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/in/aviv-shiri/" class="project-link" aria-label="view profile">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#contact" class="project-link" aria-label="contact">
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Enterprise Infrastructure Sales</h3>
+                <p class="project-description">
+                  Led enterprise sales of Dell Technologies infrastructure, SaaS, and data protection solutions. 
+                  Partnered with resellers and integrators to architect zero-trust aligned environments, 
+                  consistently exceeding revenue targets by 150%.
+                </p>
+                <div class="project-stats">
+                  <span><i class="fas fa-calendar"></i> 2025 - Present</span>
+                  <span><i class="fas fa-chart-line"></i> 150% Growth</span>
+                </div>
             <ul class="project__stack">
-              <li class="project__stack-item">Dell EMC</li>
-              <li class="project__stack-item">APC UPS</li>
-              <li class="project__stack-item">Technical Consulting</li>
+              <li class="project__stack-item">Dell Technologies</li>
+                  <li class="project__stack-item">Enterprise Sales</li>
+              <li class="project__stack-item">Zero-Trust Security</li>
             </ul>
+              </div>
+            </div>
 
-            <a
-              href="https://github.com/Avivshiri"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >    
+            <div class="project-card" data-category="partnerships">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/in/aviv-shiri/" class="project-link" aria-label="view profile">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#contact" class="project-link" aria-label="contact">
+                      <i class="fas fa-envelope"></i>
             </a>
           </div>
-
-          <div class="project">
-            <h3>Development Account Manager</h3>
-            <p class="project__description">
-              Managed a broad portfolio of enterprise clients, delivering multi-vendor IT, cloud, and software solutions. Led consultative sales processes, aligned technologies like HPE, IBM, and Nutanix to client needs, and built lasting C-level partnerships.
-            </p>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Strategic Channel Partnerships</h3>
+                <p class="project-description">
+                  Developed and managed strategic enterprise accounts and vendor portfolios including Dell, HPE, VMware, and Nutanix. 
+                  Partnered with C-level stakeholders to address security, performance, and digital transformation challenges.
+                </p>
+                <div class="project-stats">
+                  <span><i class="fas fa-calendar"></i> 2018 - 2025</span>
+                  <span><i class="fas fa-users"></i> 50+ Partners</span>
+                </div>
             <ul class="project__stack">
-              <li class="project__stack-item">Cloud Computing</li>
-              <li class="project__stack-item">Multi-Vendor Solutions</li>
-              <li class="project__stack-item">Client Growth</li>
+              <li class="project__stack-item">Channel Management</li>
+                  <li class="project__stack-item">Strategic Partnerships</li>
+              <li class="project__stack-item">C-Level Engagement</li>
             </ul>
+              </div>
+            </div>
 
-            <a
-              href="https://github.com/Avivshiri"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
+            <div class="project-card" data-category="growth">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a href="https://www.linkedin.com/in/aviv-shiri/" class="project-link" aria-label="view profile">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#contact" class="project-link" aria-label="contact">
+                      <i class="fas fa-envelope"></i>
             </a>
           </div>
-
-          <div class="project">
-            <h3>Sales Team Leader</h3>
-            <p class="project__description">
-              Led a high-performing sales and support team at Israel’s leading IT retail company, delivering advanced computing and networking solutions. Provided expert consulting, optimized sales workflows, and implemented training that improved team effectiveness and customer satisfaction.
-            </p>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Sales Team Leadership</h3>
+                <p class="project-description">
+                  Led a motivated sales team in Israel's largest computing retail chain, improving sales performance through 
+                  training, mentoring, and goal management. Delivered technical consulting on computing, networking, and integration projects.
+                </p>
+                <div class="project-stats">
+                  <span><i class="fas fa-calendar"></i> 2013 - 2018</span>
+                  <span><i class="fas fa-trophy"></i> Top Performer</span>
+                </div>
             <ul class="project__stack">
               <li class="project__stack-item">Team Leadership</li>
-              <li class="project__stack-item">Retail Strategy</li>
-              <li class="project__stack-item">Client Consulting</li>
+                  <li class="project__stack-item">Sales Training</li>
+                  <li class="project__stack-item">Performance Management</li>
             </ul>
-
-            <a
-              href="https://github.com/Avivshiri"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Skills -->
       <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">B2B Sales</li>
-          <li class="skills__list-item btn btn--plain">Cloud Services</li>
-          <li class="skills__list-item btn btn--plain">CRM (Salesforce, SAP)</li>
-          <li class="skills__list-item btn btn--plain">Technical Consulting</li>
-          <li class="skills__list-item btn btn--plain">Vmware</li>
-          <li class="skills__list-item btn btn--plain">Microsoft 365</li>
-          <li class="skills__list-item btn btn--plain">Strategic Partnerships</li>
-          <li class="skills__list-item btn btn--plain">Problem Solving</li>
-          <li class="skills__list-item btn btn--plain">System Integration</li>
-          <li class="skills__list-item btn btn--plain">Operating Systems</li>
-          <li class="skills__list-item btn btn--plain">Network Administration</li>
+        <div class="container">
+          <h2 class="section__title">Professional Skills</h2>
+          <div class="skills__grid">
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Enterprise Sales</h3>
+              <p>B2B Sales & Revenue Growth</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h3>Channel Partnerships</h3>
+              <p>Strategic Relationship Building</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3>Team Leadership</h3>
+              <p>Sales Team Management</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h3>Cloud Solutions</h3>
+              <p>AWS, Azure, SaaS Platforms</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Cybersecurity</h3>
+              <p>Zero-Trust & Data Protection</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-building"></i>
+              </div>
+              <h3>Enterprise Technology</h3>
+              <p>Infrastructure & Solutions</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h3>VMware</h3>
+              <p>Virtualization Solutions</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Networking</h3>
+              <p>Infrastructure Design</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <h3>AWS</h3>
+              <p>Cloud Services</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fab fa-microsoft"></i>
+              </div>
+              <h3>Azure</h3>
+              <p>Microsoft Cloud Platform</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>Data Protection</h3>
+              <p>Backup & Recovery Solutions</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>CRM Tools</h3>
+              <p>HubSpot, Salesforce</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <h3>Quoting Systems</h3>
+              <p>Dell Premier, HP Portal</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <h3>Go-to-Market</h3>
+              <p>Strategy & Execution</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <h3>C-Level Engagement</h3>
+              <p>Executive Communication</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Public Speaking</h3>
+              <p>Presentations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Timeline -->
+      <section class="section timeline" id="experience">
+        <div class="container">
+          <h2 class="section__title">Professional Journey</h2>
+          <div class="timeline__container">
+            <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <div class="timeline__date">February 2025 - Present</div>
+                <h3>Infrastructure Sales Specialist</h3>
+                <h4>Dell Technologies - Computer C-DATA</h4>
+                <p>
+                  Drive enterprise sales of Dell Technologies infrastructure, SaaS, and data protection solutions. 
+                  Partner with resellers, integrators, and enterprise customers to architect zero-trust aligned environments. 
+                  Lead complete sales cycles from prospecting to closing.
+                </p>
+                <ul class="timeline__highlights">
+                  <li>Drive enterprise sales of Dell Technologies solutions</li>
+                  <li>Partner with resellers and integrators</li>
+                  <li>Architect zero-trust aligned environments</li>
+                  <li>Lead complete sales cycles from prospecting to closing</li>
+                  <li>Collaborate with presales and technical experts</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item" data-aos="fade-left">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <div class="timeline__date">May 2018 - February 2025</div>
+                <h3>Development Account Manager</h3>
+                <h4>Computer C-DATA</h4>
+                <p>
+                  Managed strategic enterprise accounts and vendor portfolios including Dell, HPE, VMware, and Nutanix. 
+                  Consistently exceeded revenue goals through consultative, value-based selling and cross-functional collaboration. 
+                  Partnered with C-level stakeholders to address security, performance, and digital transformation challenges.
+                </p>
+                <ul class="timeline__highlights">
+                  <li>Managed strategic enterprise accounts</li>
+                  <li>Vendor portfolios: Dell, HPE, VMware, Nutanix</li>
+                  <li>Consistently exceeded revenue goals</li>
+                  <li>Consultative, value-based selling approach</li>
+                  <li>Partnered with C-level stakeholders</li>
+                  <li>Developed regional go-to-market strategies</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item" data-aos="fade-right">
+              <div class="timeline__marker"></div>
+              <div class="timeline__content">
+                <div class="timeline__date">2013 - 2018</div>
+                <h3>Sales Team Leader</h3>
+                <h4>Ivory Computers</h4>
+                <p>
+                  Led a motivated sales team in Israel's largest computing retail chain. Improved sales performance through 
+                  training, mentoring, and goal management. Delivered technical consulting on computing, networking, and integration projects.
+                </p>
+                <ul class="timeline__highlights">
+                  <li>Led motivated sales team</li>
+                  <li>Improved sales performance through training</li>
+                  <li>Mentoring and goal management</li>
+                  <li>Technical consulting on computing solutions</li>
+                  <li>Networking and integration projects</li>
         </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Education & Background -->
+      <section class="section certifications" id="certifications">
+        <div class="container">
+          <h2 class="section__title">Education & Background</h2>
+          <div class="certifications__grid">
+            <div class="cert__card" data-aos="zoom-in">
+              <div class="cert__icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Cybersecurity & AWS Cloud Architect Program</h3>
+              <p>Bar-Ilan University</p>
+              <span class="cert__status">Oct 2025 - Aug 2026</span>
+            </div>
+
+            <div class="cert__card" data-aos="zoom-in" data-aos-delay="50">
+              <div class="cert__icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>B.B.A. Business Administration</h3>
+              <p>Peres Academic Center Rehovot</p>
+              <span class="cert__status">2016 - 2018</span>
+            </div>
+
+            <div class="cert__card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="cert__icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Network Administrator</h3>
+              <p>IDF - C4I Corps Gideonim Camp</p>
+              <span class="cert__status">2010 - 2012</span>
+            </div>
+
+            <div class="cert__card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="cert__icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>IT Engineer</h3>
+              <p>IDF - C4I Corps Gideonim Camp</p>
+              <span class="cert__status">2010 - 2012</span>
+            </div>
+
+          </div>
+        </div>
       </section>
 
       <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:aviv3992@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2 class="section__title">Get In Touch</h2>
+          <div class="contact__content">
+            <div class="contact__info">
+              <h3>Let's Connect</h3>
+              <p>
+                I'm always interested in discussing new business opportunities, strategic partnerships, 
+                or connecting with fellow sales professionals and enterprise technology leaders.
+              </p>
+              <div class="contact__details">
+                <div class="contact__item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <a href="mailto:aviv3992@gmail.com">aviv3992@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact__item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h4>Location</h4>
+                    <span>Rishon Lezion, Israel</span>
+                  </div>
+                </div>
+                <div class="contact__item">
+                  <i class="fas fa-globe"></i>
+                  <div>
+                    <h4>Website</h4>
+                    <a href="https://avivshiri.com/">avivshiri.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact__social">
+                <a href="https://www.linkedin.com/in/aviv-shiri/" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://avivshiri.com/" class="social-link" aria-label="Website">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </div>
+            </div>
+            <form class="contact__form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <a
-        href="https://github.com/Avivshiri"
+        href="https://avivshiri.com/"
         class="link footer__link"
       >
         Created By Aviv Shiri
@@ -203,6 +643,7 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

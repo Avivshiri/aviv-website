@@ -1269,9 +1269,22 @@ main {
   border-top: 1px solid rgba(102, 126, 234, 0.1);
 }
 
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .footer__link {
   color: var(--clr-fg);
   font-weight: 600;
+}
+
+.footer__contact {
+  color: var(--clr-fg);
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 /*========

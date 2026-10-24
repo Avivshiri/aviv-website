@@ -101,22 +101,6 @@ class TypeWriter {
   }
 }
 
-// Initialize Typing Animation
-document.addEventListener('DOMContentLoaded', () => {
-  const typingElement = document.querySelector('.typing-text');
-  if (typingElement) {
-    const words = [
-      'Sales Professional',
-      'Enterprise Sales Manager',
-      'Business Development Expert',
-      'Channel Partner Specialist',
-      'Revenue Growth Leader',
-      'Cyber Security Enthusiast'
-    ];
-    new TypeWriter(typingElement, words, 2000);
-  }
-});
-
 // Animated Counter
 class AnimatedCounter {
   constructor(element, target, duration = 2000) {
@@ -134,7 +118,7 @@ class AnimatedCounter {
         this.current = this.target;
         clearInterval(timer);
       }
-      this.element.textContent = Math.floor(this.current);
+      this.element.textContent = (this.element.dataset.prefix || '') + Math.floor(this.current) + (this.element.dataset.suffix || '');
     }, 16);
   }
 }
@@ -1036,9 +1020,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTextAnimations();
 
   // Add loading complete class to body
-  setTimeout(() => {
-    body.classList.add('loaded');
-  }, 1500);
+  body.classList.add('loaded');
 });
 
 // Loading Animation
